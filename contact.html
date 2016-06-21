@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="es">
+	<head>
+		<title>BatMan</title>
+		<meta charset="utf-8">
+	</head>
+
+	<body>
+		<header>
+			<h1>BatMan</h1>
+			<img src="images/batman.jpg" alt="Señal de BatMan">
+			<p>Él puede tomar la desición que nadie más puede, la desición correcta</p>
+		</header>
+		<nav>
+			<ul>
+				<li>
+					<a href="index.html">Inicio</a>
+				</li>
+				<li>
+					<a href="index.html#quien-soy">Quien soy</a>
+				</li>
+				<li>
+					<a href="index.html#equipo">Equipo</a>
+				</li>
+				<li>
+					<a href="index.html#transporte">Transporte</a>
+				</li>
+				<li>
+					<a href="#">Contacto</a>
+				</li>	
+			</ul>
+		</nav>
+
+		<section>
+			<h2>Contacta con nosotros</h2>
+			<div>
+				<div class="googleMap"></div>
+			</div>
+			<form name="contact-batman" method="get">
+				<div>
+					<label for="nombre">Nombre : </label>
+					<input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+
+					<label for="apellidos">Apellidos : </label>
+					<input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+				</div>
+				<div>
+					<label for="email">Email : </label>
+					<input type="email" name="email" id="email" placeholder="name@company.com" pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+" required>
+				</div>
+				<div>
+					<label for="Tipo_mision_1">Consulta</label>
+					<input type="radio" name="tipo_mision_1" name="tipo_mision" value="Consulta" required>
+					<label for="Tipo_mision_2">Misión Simple</label>
+					<input type="radio" name="tipo_mision_2" name="tipo_mision" value="Misión Simple" required>
+					<label for="Tipo_mision_3">Rescate</label>
+					<input type="radio" name="tipo_mision_3" name="tipo_mision" value="Rescate" required>
+					<label for="Tipo_mision_4">Salvar Gotham</label>
+					<input type="radio" name="tipo_mision_4" name="tipo_mision" value="Salvar Gotham" required>
+				</div>
+				<div>
+					<label for="ejercito">Tamaño del Ejercito</label>
+					<input type="number" id="ejercito" name="ejercito" min="20" required>
+				</div>
+				<div>
+					<label for="fecha">Fecha de la Misión</label>
+					<input type="date" id="fecha" name="fecha" required>
+				</div>
+				<div>
+					<input type="submit" name="Enviar">
+				</div>
+			</form>
+		</section>
+		<section>
+			<table>
+				<thead>
+					<tr>
+						<th>Tipo de servicio</th>
+						<th>Precio</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Misión simple</td>
+						<td>500 €</td>
+					</tr>
+
+					<tr>
+						<td>Rescate</td>
+						<td>1.000 €</td>
+					</tr>
+
+					<tr>
+						<td>Salvar Gotham</td>
+						<td>15.000 €</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<footer>
+			Carlos Castaño - 11400.es &copy KeepCoding.io
+		</footer>
+	</body>
+</html>
